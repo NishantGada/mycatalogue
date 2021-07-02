@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/catalogue.css">
+    <link rel="stylesheet" href="css/product.css">
+    <title>Hello, world!</title>
+</head>
+<body>
+    <header><h1>MyCatalogue</h1></header>
+
+    <div id="breadcrums">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="./index.html">Home</a></li>
+                <li class="breadcrumb-item"><a href="./catalogue.html">Nishant_Nike_Store</a></li>
+                <li class="breadcrumb-item"><a href="#">product-name</a></li>
+            </ol>
+        </nav>
+        <a href="" id="removeProduct" class="btn btn-danger add_product_btn">remove product</a>
+    </div>
+
+    <section class="product_details">
+        <img src="./img/Plant.jpg" class="productImage" alt="">
+        <div>
+            <h4>Product name</h4>
+            <p>Puma X15</p>
+            <h4>Product description</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque natus placeat laboriosam 
+                nisi adipisci nulla? Ratione, vel blanditiis accusantium dolores nobis voluptatum eaque 
+                numquam dicta dolorum dignissimos tenetur rem! Laboriosam?
+            </p>
+            <h4>Product category</h4>
+            <p>Wellness</p>
+            <h4>Product price</h4>
+            <p>Rs. 3200</p>
+            <h4>To buy, contact: </h4>
+            <p>9876543210</p>
+            <p>(or)</p>
+            <p>johndoe@gmail.com</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="sub_footer">
+            <div class="newsletter">
+                <form>
+                    <input type="email" name="newsletterEmail" id="newsletterEmail" placeholder="enter your email id" required>
+                    <input type="submit" value="submit">
+                </form>
+            </div>
+            <div class="column1">
+                <p><a href="#">Contact us</a></p>
+                <p><a href="#">About us</a></p>
+                <p><a href="#">FAQ</a></p>
+                <p><a href="#">item 1</a></p>
+            </div>
+            <div class="column2">
+                <p><a href="#">How to use</a></p>
+                <p><a href="#">Subscription plans</a></p>
+                <p><a href="#">item 1</a></p>
+                <p><a href="#">item 1</a></p>
+            </div>
+        </div>
+        <div class="copyright"><p>copyright &nbsp;&nbsp;&nbsp; nishantbipingada, 2021</p></div>
+    </footer>
+
+
+    <script>
+        var removeProduct = document.getElementById("removeProduct");
+        removeProduct.addEventListener('click', function() {
+            alert("Are you sure you want to remove this product?");
+        })
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+        crossorigin="anonymous"></script>
+</body>

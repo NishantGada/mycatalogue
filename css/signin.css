@@ -1,0 +1,55 @@
+#signup {
+    width: 50%;
+    max-height: 100%;
+    margin: 100px auto;
+    /* border: 1px solid black; */
+}
+
+#signup div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#signup div p a {
+    color: darkblue;
+}
+
+#signup input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    background-color: rgb(238, 238, 238);
+    outline: none;
+}
+
+#signup input[type=submit] {
+    width: 150px !important;
+    background-color: #2c3e50 !important;
+    color: white;
+}
+
+#forgot_password {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    #signup {
+        width: 80%;
+    }
+
+    #signup p {
+        margin: 10px 0;
+    }
+
+    #signup div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    #signup input[type=submit] {
+        background-color: #2c3e50 !important;
+        color: white;
+    }
+}
